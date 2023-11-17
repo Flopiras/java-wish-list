@@ -26,12 +26,18 @@ public class Main {
 			System.out.println("Che regalo vuoi aggiungere?");
 			String gift = in.nextLine();
 			gifts.add(gift);
-			
 			System.out.println("Ci sono " + gifts.size() + " regali nella lista!");
 		}
 		
 		in.close();
 		
+		System.out.println("\n--------------------------------------------------\n");
+		System.out.println("REGALI:");
+		
+		for (String gift : gifts) {
+			System.out.println(gift);
+		}
+		
 	}
-
+	
 }
